@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	div.numberbox
+		p Please enter a number 
+		form(name="number", action="/numbers", method="post")
+			input(type="text", name="number")
+			input(type="submit", value="Submit")
